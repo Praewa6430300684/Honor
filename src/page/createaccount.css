@@ -1,0 +1,56 @@
+#root {
+    max-width: 1280px;
+    
+    padding: 2rem;
+    /*text-align:center;*/
+    
+}
+
+.textt {
+    font-size: 1.25rem;
+    font-weight:500;
+    margin-left: 880px;
+    color: #19A5CA;
+    margin-bottom: 8px;
+}
+
+form{
+    margin-left: 880px;
+    
+}
+
+.text2{
+    font-size: 1.25rem;
+    font-weight:500;
+    color: #19A5CA;
+    margin-bottom: 8px;
+}
+
+.text1{
+    font-size: 0.85rem;
+    font-weight:450;
+    color: #000000;
+    margin-left: 903px;
+}
+
+input{
+    width: 270px;
+    border: none;
+    border-bottom: 1px solid #19A5CA;;
+    background-color: transparent;
+    outline: none;
+    color: #000000;
+}
+
+.text3{
+    font-size: 0.8rem;
+    font-weight:450;
+    color: #19A5CA;
+    margin-left: 177px;
+    
+}
+
+
+
+
+
