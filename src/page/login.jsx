@@ -63,8 +63,9 @@ const Login = () => {
                     </Link>
 
                     {errorMessage && <p>{errorMessage}</p>}</form>
-                <br /><div className='text1'>Don't have an account?
-                    <Link to='/createaccount'> Create Account</Link>
+                <br />
+                <div className='text1'>Don't have an account?
+                    <Link to='/createaccount' className='text4'> Create Account</Link>
                 </div>
 
 

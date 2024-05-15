@@ -6,6 +6,28 @@
     
 }
 
+button {
+    border-radius: 25px;
+    width: 280px;
+
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1.25em;
+    font-weight: 650;
+    font-family: inherit;
+    background-color: #19a5ca;
+    cursor: pointer;
+    transition: border-color 0.25s;
+
+}
+
+h2{
+    font-size: 2.87em;
+    line-height: 1.1;
+    margin-left: 860px;
+    color: #19A5CA;
+}
+
 .textt {
     font-size: 1.25rem;
     font-weight:500;
@@ -26,11 +48,11 @@ form{
     margin-bottom: 8px;
 }
 
-.text1{
+.text5{
     font-size: 0.85rem;
     font-weight:450;
     color: #000000;
-    margin-left: 903px;
+    margin-left: 920px;
 }
 
 input{

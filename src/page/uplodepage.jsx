@@ -8,14 +8,21 @@ const Uplode = () => {
     };
     return (
         <>
-            <button onClick={handleOnclick}>
+            <div className='button' onClick={handleOnclick}>
                 DOCUMENT
-            </button>
+            </div>
             <div className='container'>
                 <div className='container2'>
                     <div className='text'>
                         อัปโหลดไฟล์ภาพหรือเอกสาร
                     </div>
+                    <div className='text-2'>
+                        เลือกประเภทเอกสาร
+                    </div>
+                    <span >
+                        <button>ยืนยัน</button>
+                    </span>
+                    
                 </div>
                 
             </div>

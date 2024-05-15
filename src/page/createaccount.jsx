@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './login.css';
+import './createaccount.css';
 
 const Createaccount = () => {
     const [email, setEmail] = useState("");
@@ -30,7 +30,8 @@ const Createaccount = () => {
             <h2>
                 Create Account
             </h2>
-            <br /><form onSubmit={handleSubmit}>
+            
+            <form onSubmit={handleSubmit}>
                 <div className='text2'>
                     Name
                 </div>
@@ -65,7 +66,8 @@ const Createaccount = () => {
                 </Link>
                 {errorMessage && <p>{errorMessage}</p>}</form>
             <br />
-            <div className='text4'>Already have an account? <Link to='/'>Login</Link> </div>
+            <div className='text5'>Already have an account? 
+            <Link to='/' className='text4'> Login</Link> </div>
 
         </>
 

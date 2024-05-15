@@ -33,6 +33,7 @@ button {
     cursor: pointer;
     transition: border-color 0.25s;
 
+
 }
 
 h1 {
@@ -41,6 +42,8 @@ h1 {
     margin-left: 950px;
     color: #19A5CA;
 }
+
+
 
 
 .textt {
@@ -74,7 +77,7 @@ input {
     width: 270px;
     border: none;
     border-bottom: 1px solid #19A5CA;
-    ;
+    
     background-color: transparent;
     outline: none;
     color: #000000;
@@ -91,6 +94,6 @@ input {
 .text4 {
     font-size: 0.85rem;
     font-weight: 450;
-    color: #000000;
-    margin-left: 920px;
+    color: #19A5CA;
+    
 }

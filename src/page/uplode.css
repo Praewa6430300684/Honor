@@ -14,10 +14,10 @@
 }
 
 
-button {
+.button {
     border-radius: 13px;
-    width: 200px;
-
+    width: 130px;
+    height: 28px;
     font-size: 1.25em;
     font-weight: 500;
     font-family: inherit;
@@ -34,16 +34,16 @@ button {
 }
 
 .container {
-    width: 1175px;
+    width: 1200px;
     height: 500px;
     background-color: antiquewhite;
-    margin-left: 280px;
+    margin-left: 235px;
+    margin: top 200px ;
     border-radius: 24px;
-
 }
 
 .text {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     font-weight: 500;
     margin-left: 20px;
     
@@ -53,11 +53,20 @@ button {
 }
 
 .container2{
-    width: 1115px;
-    height: 470px;
+    width: 1140px;
+    height: 250px;
     background-color: rgb(252, 252, 252);
-    margin-left: 30px;
+    margin-left: 28px;
     
     
     border-radius: 16px;
+}
+
+.text-2{
+    font-size: 1.0rem;
+    font-weight: 100;
+    margin-left: 20px;
+    
+    color: #19A5CA;
+    margin-bottom: 8px;
 }
