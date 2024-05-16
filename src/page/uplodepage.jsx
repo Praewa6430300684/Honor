@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
 import "./uplode.css"; // Import the CSS file
 
 const Uplode = () => {
@@ -65,7 +66,9 @@ const Uplode = () => {
               <td>เอกสารทั่วไป</td>
               <td>May 13, 2024</td>
               <td>สำเร็จ</td>
-              <td>แก้ไข</td>
+              <td>
+               <Link to='/edit'>แก้ไข</Link> 
+              </td>
               <td>:</td>
             </tr>
           </tbody>
