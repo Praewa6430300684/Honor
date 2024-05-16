@@ -1,12 +1,12 @@
 import * as React from "react";
 import "./edit.css";
 
-function Edit() {
+function Edit2() {
   return (
     <>
       <section className="container3">
-        <div className="row">
-          <div className="col-md-12">
+        <div className="row1">
+          <div className="column1">
             <div className="content">
 
               <img
@@ -62,4 +62,4 @@ function Edit() {
   );
 }
 
-export default Edit
+export default Edit2

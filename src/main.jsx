@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 //import './index.css'
 import Createaccount from './page/createaccount.jsx'
-import Edit from './page/edit.jsx'
+import Edit from './page/edit2.jsx'
 import Login from './page/login.jsx'
 import Uplode from './page/uplodepage.jsx'
 
