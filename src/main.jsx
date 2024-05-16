@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 //import './index.css'
 import Createaccount from './page/createaccount.jsx'
+import Edit from './page/edit.jsx'
 import Login from './page/login.jsx'
 import Uplode from './page/uplodepage.jsx'
 
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: '/uplode',
     element: <Uplode />
+  },
+  {
+    path: '/edit',
+    element: <Edit/>
   }
 ]);
 

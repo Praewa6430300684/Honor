@@ -50,11 +50,7 @@ const Login = () => {
                     </div>
 
                     <input type="password" id='password' value={password} onChange={handlePasswordChange} placeholder="Password" required />
-
-                    <div className='text3'>
-                        forgot password?
-
-                    </div>
+                    <br />
                     <br />
                     <Link to='/uplode'>
                         <button type='submit' >
