@@ -1,3 +1,7 @@
+import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
+import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
+import ExpandMoreRoundedIcon from '@mui/icons-material/ExpandMoreRounded';
+import UploadFileIcon from '@mui/icons-material/UploadFile';
 import * as React from "react";
 import { Link } from "react-router-dom";
 import "./uplode.css"; // Import the CSS file
@@ -7,7 +11,15 @@ const Uplode = () => {
     <>
     <div className="row">
       <div className="column">
-        <div className="container2">อัปโหลดไฟล์</div>
+        
+        <div className="container2">
+          <span>
+             <DescriptionOutlinedIcon/>
+             &nbsp;&nbsp;
+          <span>อัปโหลดไฟล์</span>
+          </span>
+         
+          </div>
       </div>
       <div className="col-md-6">
         
@@ -17,7 +29,10 @@ const Uplode = () => {
           <div className="uploadHeader">
             <div className="documentType">
               <div className="typeLabel">เลือกประเภทเอกสาร</div>
-              <div className="typePlaceholder">กรุณาเลือกประเภทเอกสาร</div>
+              <div className="typePlaceholder">
+                กรุณาเลือกประเภทเอกสาร
+                <ExpandMoreRoundedIcon/>
+              </div>
             </div>
             <div className="uploadInfo">
               <div className="fileInfo">0 file (0 B / 10.0 Mb)</div>
@@ -26,8 +41,9 @@ const Uplode = () => {
               </div>
             </div>
           </div>
-          <div className="divider" />
+          <div className="divider2" />
           <div className="dropZone">
+            <UploadFileIcon/>
             วางหลายไฟล์พร้อมกันได้ที่นี่
             <br />
             (รองรับ .pdf,.................)
@@ -55,19 +71,19 @@ const Uplode = () => {
               <th>ประเภทเอกสาร</th>
               <th>วันที่อัปโหลด</th>
               <th>สถานะ</th>
-              <th>แก้ไข</th>
+              <th><EditOutlinedIcon/></th>
               <th>:</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>ชื่อไฟล์</td>
+              <td><ExpandMoreRoundedIcon/>ชื่อไฟล์</td>
               <td>1</td>
               <td>เอกสารทั่วไป</td>
               <td>May 13, 2024</td>
               <td>สำเร็จ</td>
               <td>
-               <Link to='/edit'>แก้ไข</Link> 
+               <Link to='/edit'><EditOutlinedIcon/></Link> 
               </td>
               <td>:</td>
             </tr>

@@ -27,6 +27,7 @@ const Createaccount = () => {
     };
     return (
         <>
+        <div className='container-register'>
             <h2>
                 Create Account
             </h2>
@@ -49,6 +50,7 @@ const Createaccount = () => {
                 <br />
                 <div className='text2'>
                     Password
+                    
                 </div>
 
                 <input type="password" id='password' value={password} onChange={handlePasswordChange} placeholder="Enter your password" required />
@@ -56,6 +58,8 @@ const Createaccount = () => {
                 <br />
                 <div className='text2'>
                     Confirm password
+                    
+                        
                 </div>
                 <input placeholder="Enter your confirm password"></input>
                 <br /><br />
@@ -68,6 +72,8 @@ const Createaccount = () => {
             <br />
             <div className='text5'>Already have an account? 
             <Link to='/' className='text4'> Login</Link> </div>
+        </div>
+            
 
         </>
 

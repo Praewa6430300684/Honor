@@ -1,7 +1,8 @@
+import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined';
+import { Button } from '@mui/material';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './login.css';
-
 
 
 const Login = () => {
@@ -29,27 +30,29 @@ const Login = () => {
     };
     return (
         <>
-            
 
-
+            <div className='container-login'>
                 <h1>
                     Login
                 </h1>
                 <br />
-                <div className='textt'>
+            
+                <form onSubmit={handleSubmit}>
+                    <div className='text2'>
                     Email Address
                 </div>
-
-                <form onSubmit={handleSubmit}>
                     <input type="email" id='email' value={email} onChange={handleEmailChange} placeholder="Email Address" required />
 
                     <br />
                     <br />
                     <div className='text2'>
                         Password
+                        &nbsp;&nbsp;
+                        
                     </div>
-
-                    <input type="password" id='password' value={password} onChange={handlePasswordChange} placeholder="Password" required />
+                    <span><input type="password" id='password' value={password} onChange={handlePasswordChange} placeholder="Password" required />
+                    <Button><VisibilityOffOutlinedIcon/></Button></span>
+                    
                     <br />
                     <br />
                     <Link to='/uplode'>
@@ -58,16 +61,13 @@ const Login = () => {
                         </button>
                     </Link>
 
-                    {errorMessage && <p>{errorMessage}</p>}</form>
+                    {errorMessage && <p>{errorMessage}</p>}
+                </form>
                 <br />
                 <div className='text1'>Don't have an account?
                     <Link to='/createaccount' className='text4'> Create Account</Link>
                 </div>
-
-
-
-
-            
+            </div>
         </>
 
     )

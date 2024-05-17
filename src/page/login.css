@@ -1,13 +1,8 @@
 :root {
-    max-width: 1280px;
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+   
+    font-family: Prompt, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
-
-    /*text-align:center;*/
-    
-
-
 }
 
 body {
@@ -28,8 +23,8 @@ button {
     border: 1px solid transparent;
     padding: 0.6em 1.2em;
     font-size: 1.25em;
-    font-weight: 650;
-    font-family: inherit;
+    font-weight: 500;
+    font-family:"Prompt", sans-serif;
     background-color: #19a5ca;
     cursor: pointer;
     transition: border-color 0.25s;
@@ -38,43 +33,48 @@ button {
 }
 
 h1 {
+    font-family:"Prompt", sans-serif;
     font-size: 3.2em;
     line-height: 1.1;
-    margin-left: 950px;
+    
     color: #19A5CA;
+    margin-left: 182px;
+    
 }
 
-
-
-
 .textt {
+    font-family:"Prompt", sans-serif;
     font-size: 1.25rem;
     font-weight: 500;
-    margin-left: 880px;
+    
     color: #19A5CA;
     margin-bottom: 8px;
 }
 
 form {
-    margin-left: 880px;
+    margin-left:122px;
 
 }
 
 .text2 {
+    font-family:"Prompt", sans-serif;
     font-size: 1.25rem;
     font-weight: 500;
     color: #19A5CA;
     margin-bottom: 8px;
+    
 }
 
 .text1 {
+    font-family:"Prompt", sans-serif;
     font-size: 0.85rem;
-    font-weight: 450;
+    font-weight: 400;
     color: #000000;
-    margin-left: 903px;
+    margin-left: 142px;
 }
 
 input {
+    font-family:"Prompt", sans-serif;
     width: 270px;
     border: none;
     border-bottom: 1px solid #19A5CA;
@@ -82,19 +82,30 @@ input {
     background-color: transparent;
     outline: none;
     color: #000000;
+
 }
 
 .text3 {
+    font-family:"Prompt", sans-serif;
     font-size: 0.8rem;
-    font-weight: 450;
+    font-weight: 400;
     color: #19A5CA;
-    margin-left: 177px;
+    margin-left:center;
 
 }
 
 .text4 {
     font-size: 0.85rem;
-    font-weight: 450;
+    font-weight: 400;
+    font-family: "Prompt", sans-serif;
     color: #19A5CA;
-    
+
+}
+
+.container-login{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 16px;
+    margin-left: 500px;
 }
