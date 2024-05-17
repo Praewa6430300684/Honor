@@ -44,7 +44,14 @@ const Edit = () => {
                             <div className="divider"></div>
                             <div className="placeholder">
                                 ทั่วไป
+                                <div className="details-placeholder"></div>
+                                
                             </div>
+                            <br/>
+                        
+                                <button className="confirm-button">ยืนยัน</button>
+                            
+                            
                         </div>
 
                     </div>
