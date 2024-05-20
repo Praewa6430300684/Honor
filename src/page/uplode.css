@@ -248,8 +248,9 @@ body {
 
 .dropZone {
   color: #b6b6b6;
-  margin-top: 99px;
+  margin-top: 20px;
   font-family: Prompt, sans-serif;
+ 
 }
 
 @media (max-width: 991px) {
@@ -312,3 +313,11 @@ body {
   text-decoration:none;
 }
 
+.status-success{
+  background-color: #19CA8A;
+  
+}
+
+.status-inprocess{
+  background-color: #19A5CA;
+}

@@ -3,10 +3,26 @@ import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
 import ExpandMoreRoundedIcon from '@mui/icons-material/ExpandMoreRounded';
 import UploadFileIcon from '@mui/icons-material/UploadFile';
 import * as React from "react";
+import { useDropzone } from 'react-dropzone';
 import { Link } from "react-router-dom";
 import "./uplode.css"; // Import the CSS file
 
 const Uplode = () => {
+  const styles = {
+    dropzone: {
+      /*border: '2px dashed #cccccc',*/
+      borderRadius: '4px',
+      padding: '10px',
+      textAlign: 'center',
+      cursor: 'pointer'
+      
+    }
+  };
+  const onDrop = (acceptedFiles) => {
+    console.log(acceptedFiles);
+  };
+
+  const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
   return (
     <>
       <div className="row">
@@ -27,7 +43,7 @@ const Uplode = () => {
             <div className="header">อัปโหลดไฟล์ภาพหรือเอกสาร</div>
             <div className="uploadSection">
               <div className="uploadHeader">
-                
+
                 <div className="uploadInfo">
                   <div className="fileInfo">0 file (0 B / 10.0 Mb)</div>
                   <div className="confirmButtonContainer">
@@ -36,17 +52,25 @@ const Uplode = () => {
                 </div>
               </div>
               <div className="divider2" />
-              <div className="dropZone">
-                <UploadFileIcon />
-                <br/>
-                วางหลายไฟล์พร้อมกันได้ที่นี่
-                <br />
-                (รองรับ .pdf,.................)
-                <br />
-                หรือคลิกเพื่อเลือกไฟล์
-                <br />
-                *จำกัดขนาดอัปโหลดไฟล์ที่ ...Mb
+              <div {...getRootProps()} style={styles.dropzone}>
+                <input {...getInputProps()} />
+                {
+                  isDragActive ? (
+                    <p>Drag 'n' drop some files here, or click to select files</p>
+                  ) : (<div className="dropZone">
+                    <UploadFileIcon />
+                    <br />
+                    วางหลายไฟล์พร้อมกันได้ที่นี่
+                    <br />
+                    (รองรับ .pdf,.................)
+                    <br />
+                    หรือคลิกเพื่อเลือกไฟล์
+                    <br />
+                    *จำกัดขนาดอัปโหลดไฟล์ที่ ...Mb
+                  </div>)
+                }
               </div>
+
             </div>
           </div>
 
@@ -65,7 +89,7 @@ const Uplode = () => {
                   <th>จำนวนหน้า</th>
                   <th>ประเภทเอกสาร</th>
                   <th>วันที่อัปโหลด</th>
-                  <th>สถานะ</th>
+                  <th >สถานะ</th>
                   <th><EditOutlinedIcon /></th>
                   <th>:</th>
                 </tr>
@@ -76,7 +100,19 @@ const Uplode = () => {
                   <td>1</td>
                   <td>เอกสารทั่วไป</td>
                   <td>May 13, 2024</td>
-                  <td>สำเร็จ</td>
+                  <td className='status-success'>สำเร็จ</td>
+                  <td>
+                    <Link to='/edit'><EditOutlinedIcon /></Link>
+                  </td>
+                  <td>:</td>
+                </tr>
+
+                <tr>
+                  <td><ExpandMoreRoundedIcon />ชื่อไฟล์</td>
+                  <td>1</td>
+                  <td>เอกสารทั่วไป</td>
+                  <td>May 13, 2024</td>
+                  <td className='status-inprocess'>กำลังดำเนินการ</td>
                   <td>
                     <Link to='/edit'><EditOutlinedIcon /></Link>
                   </td>

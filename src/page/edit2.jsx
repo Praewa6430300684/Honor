@@ -1,36 +1,40 @@
-import { FitScreenOutlined, ZoomInOutlined, ZoomOutOutlined } from '@mui/icons-material';
+import { FitScreenOutlined, ZoomInOutlined, ZoomOutOutlined, } from '@mui/icons-material';
 import ArrowBackRoundedIcon from '@mui/icons-material/ArrowBackRounded';
 import LanguageOutlinedIcon from '@mui/icons-material/LanguageOutlined';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import "./edit.css";
 
 const Edit = () => {
     return (
         <>
             <div className="main-container">
+
                 <div className="row1">
-                    <div className="backbutton">
-                        <button >
-                            <ArrowBackRoundedIcon/>
-                            &nbsp;&nbsp;
-                            <Link to='/uplode'>BACK</Link>
-                        </button>
-                    </div>
+<div className="backbutton">
+                    <button >
+                        <ArrowBackRoundedIcon />
+                        &nbsp;&nbsp;
+                        <Link to='/uplode'>BACK</Link>
+                    </button>
+                </div>
 
                     <div className="container3">
                         <div className="text85">
                             <header className="translation">
-                                <ZoomInOutlined/>
-                                
+                                <ZoomInOutlined />
+
                                 &nbsp;&nbsp;
-                                <ZoomOutOutlined/>
-                                
+                                <ZoomOutOutlined />
+
                                 &nbsp;&nbsp;
-                                <FitScreenOutlined/>
+                                <FitScreenOutlined />
+
+
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             </header>
                         </div>
 
-                        <div className="placeholder">
+                        <div className="placeholder1">
 
                         </div>
                     </div>
@@ -43,7 +47,7 @@ const Edit = () => {
                                 <span>Page 1/1</span>&nbsp;
                                 <span>|</span>&nbsp;
                                 <span className="translation">
-                                    <LanguageOutlinedIcon/> 
+                                    <LanguageOutlinedIcon />
                                     <span>ภาษาไทย</span>
                                 </span>
 
@@ -53,23 +57,23 @@ const Edit = () => {
                         <div className="column2">
                             <div className="divider"></div>
                             <div className="placeholder">
-                            &nbsp;&nbsp;
-                            ทั่วไป
+                                <div className='details-title'>
+                                    &nbsp;&nbsp;ทั่วไป</div>
+
                                 <div className="details-placeholder"></div>
-                                
+
                             </div>
-                            <br/>
-                        
-                                <button className="confirm-button">ยืนยัน</button>
-                            
-                            
+                            <br />
+
+                            <button className="confirm-button">ยืนยัน</button>
+
+
                         </div>
 
                     </div>
                 </div>
-                <div>
-                </div>
-
+                
+                
 
             </div>
 
