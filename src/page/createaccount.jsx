@@ -5,7 +5,9 @@ import './createaccount.css';
 const Createaccount = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [confirmPassword, setConfirmPassword] = useState("");
     const [errorMessage, setErrorMessage] = useState("");
+    const [name, setName] = useState("");
 
     const handleEmailChange = (e) => {
         setEmail(e.target.value);
@@ -15,14 +17,31 @@ const Createaccount = () => {
         setPassword(e.target.value);
     };
 
-    const handleSubmit = (e) => {
+    const handleNameChange = (e) => { // เพิ่ม handle function สำหรับการเปลี่ยนชื่อ
+        setName(e.target.value);
+    };
+
+    const handleConfirmPasswordChange = (e) => { // เพิ่ม handle function สำหรับการเปลี่ยนรหัสผ่านที่ยืนยัน
+        setConfirmPassword(e.target.value);
+    };
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        if (email === 'example@example.com' && password === 'password') {
-            // Successful login logic, e.g., redirecting to another page
-            console.log('Login successful');
-            alert('Login Success')
-        } else {
-            setErrorMessage('Invalid email or password');
+        if (password !== confirmPassword) {
+            setErrorMessage('Password and Confirm Password do not match');
+            return;
+        }
+        try {
+            const response = await axios.post('http://localhost:3000/register', { // เปลี่ยน 'your_api_endpoint' เป็น URL ของ API ของคุณ
+                name: name,
+                email: email,
+                password: password
+            });
+            console.log(response.data); // แสดงข้อมูลที่ได้จากการสร้างบัญชีผู้ใช้สำเร็จ
+            alert('Account created successfully');
+        } catch (error) {
+            console.error(error);
+            setErrorMessage('Failed to create account');
         }
     };
     return (
@@ -62,15 +81,16 @@ const Createaccount = () => {
                     
                         
                 </div>
-                <input placeholder="Enter your confirm password"></input>
+                <input type='password' value={confirmPassword} onChange={handleConfirmPasswordChange} placeholder="Enter your confirm password"></input>
                 <br /><br />
                 <Link to='/uplode'>
-                <button type='submit' >
+                <button type='submit' onClick={handleSubmit}>
                     Create Account
                 </button>
                 </Link>
-                {errorMessage && <p>{errorMessage}</p>}</form>
-            <br />
+                <div className='error'>{errorMessage && <p>{errorMessage}</p>}</div>
+                </form>
+            
             <div className='text5'>Already have an account? 
             <Link to='/' className='text4'> Login</Link> </div>
         </div>
