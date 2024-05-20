@@ -12,6 +12,7 @@ const Edit = () => {
                     <div className="backbutton">
                         <button >
                             <ArrowBackRoundedIcon/>
+                            &nbsp;&nbsp;
                             <Link to='/uplode'>BACK</Link>
                         </button>
                     </div>

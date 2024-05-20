@@ -29,7 +29,7 @@ body {
   font-size: 1.15rem;
   font-weight: 500;
   margin-left: 20px;
-
+  font-family: Prompt, sans-serif;
   color: #19A5CA;
   margin-bottom: 8px;
 
@@ -53,6 +53,8 @@ body {
 .text-2 {
   font-size: 1.0rem;
   font-weight: 100;
+  font-family: Prompt, sans-serif;
+
   margin-left: 20px;
 
   color: #19A5CA;
@@ -85,7 +87,7 @@ body {
   text-align: center;
   padding: 27px 20px;
   margin-left: 20px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 @media (max-width: 991px) {
@@ -123,6 +125,7 @@ body {
 .uploadSection {
   border-radius: 16px;
   border: 1px solid rgba(198, 198, 198, 1);
+  font-family: Prompt, sans-serif;
   background-color: #fff;
   display: flex;
   margin-top: 39px;
@@ -141,6 +144,7 @@ body {
   display: flex;
   gap: 20px;
   font-size: 20px;
+  font-family: Prompt, sans-serif;
   justify-content: space-between;
   margin: 0 22px;
   padding: 0 1px;
@@ -156,6 +160,7 @@ body {
 
 .documentType {
   display: flex;
+  font-family: Prompt, sans-serif;
   gap: 19px;
   white-space: nowrap;
   margin: auto 0;
@@ -171,13 +176,13 @@ body {
 
 .typeLabel {
   color: #19a5ca;
-  font-family: Poppins, sans-serif;
+  font-family: Prompt, sans-serif;
   flex-grow: 1;
   margin: auto 0;
 }
 
 .typePlaceholder {
-  font-family: Poppins, sans-serif;
+  font-family: Prompt, sans-serif;
   border-radius: 8px;
   border: 1px solid rgba(198, 198, 198, 1);
   background-color: #fff;
@@ -198,11 +203,12 @@ body {
 .uploadInfo {
   display: flex;
   gap: 16px;
+  font-family: Prompt, sans-serif;
 }
 
 .fileInfo {
   color: #c6c6c6;
-  font-family: Poppins, sans-serif;
+  font-family: Prompt, sans-serif;
   flex-grow: 1;
   margin: auto 0;
 }
@@ -210,7 +216,7 @@ body {
 .confirmButtonContainer button{
   width: 100px;
   font-size: 16px;
-  font-family: Poppins, sans-serif;
+  font-family: Prompt, sans-serif;
   border-radius: 16px;
   background-color: #19a5ca;
   color: #fff;
@@ -227,6 +233,7 @@ body {
 }
 
 .divider2 {
+  font-family: Prompt, sans-serif;
   border: 1px solid rgba(198, 198, 198, 1);
   background-color: #c6c6c6;
   margin-top: 9px;
@@ -242,7 +249,7 @@ body {
 .dropZone {
   color: #b6b6b6;
   margin-top: 99px;
-  font: 10px Poppins, sans-serif;
+  font-family: Prompt, sans-serif;
 }
 
 @media (max-width: 991px) {
@@ -268,7 +275,7 @@ body {
 
 .searchLabel {
   color: #19a5ca;
-  font-family: Poppins, sans-serif;
+  font-family: Prompt, sans-serif;
   
   align-self: start;
   margin-left: 30px;
@@ -276,7 +283,7 @@ body {
 }
 
 .searchPlaceholder {
-  font-family: Poppins, sans-serif;
+  font-family: Prompt, sans-serif;
   border-radius: 8px;
   border: 1px solid rgba(198, 198, 198, 1);
   background-color: #fff;
@@ -296,11 +303,12 @@ body {
   }
 }
 
-.input1 input {
-  
+.input1 {
+  font-family: Prompt, sans-serif;
   border: none;
   background-color: transparent;
   outline: none;
   color: #000000;
+  text-decoration:none;
 }
 

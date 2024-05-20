@@ -8,6 +8,7 @@ button {
     font-weight: 650;
     font-family: inherit;
     background-color: #19a5ca;
+    color : #fff;
     cursor: pointer;
     transition: border-color 0.25s;
 
@@ -15,10 +16,10 @@ button {
 
 h2{
     font-size: 2.6em;
-    line-height: 1.1;
-    margin-left: 860px;
+    line-height: 3;
     color: #19A5CA;
-    margin-left: 105px;
+    margin-left: 100px;
+    margin-top: 20px;
 }
 
 .textt {
@@ -26,11 +27,11 @@ h2{
     font-weight:500;
     margin-left: 880px;
     color: #19A5CA;
-    margin-bottom: 8px;
 }
 
 form{
     margin-left: 880px;
+    margin-top: -40px;
     
 }
 
@@ -43,9 +44,9 @@ form{
 
 .text5{
     font-size: 0.85rem;
-    font-weight:450;
+    font-weight:400;
     color: #000000;
-    margin-left: 165px;
+    margin-left: 145px;
 }
 
 input{
@@ -55,13 +56,14 @@ input{
     background-color: transparent;
     outline: none;
     color: #000000;
+    margin-left: center;
 }
 
 .text3{
     font-size: 0.8rem;
     font-weight:450;
     color: #19A5CA;
-    margin-left: 177px;
+    margin-left: center;
     
 }
 
@@ -70,7 +72,8 @@ input{
     height: 600px;
     background-color: white;
     border-radius: 16px;
-    margin-left: 500px;
+    margin-left: center;
+    margin-top: -20px;
 }
 
 
