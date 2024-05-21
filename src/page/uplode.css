@@ -321,3 +321,17 @@ body {
 .status-inprocess{
   background-color: #19A5CA;
 }
+
+.logout button{
+  width: 220px;
+  
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+  margin-top: 20px;
+  margin-left: 10px;
+}

@@ -1,6 +1,7 @@
 import { FitScreenOutlined, ZoomInOutlined, ZoomOutOutlined, } from '@mui/icons-material';
 import ArrowBackRoundedIcon from '@mui/icons-material/ArrowBackRounded';
 import LanguageOutlinedIcon from '@mui/icons-material/LanguageOutlined';
+import { EditTextarea } from 'react-edit-text';
 import { Link } from 'react-router-dom';
 import "./edit.css";
 
@@ -60,7 +61,12 @@ const Edit = () => {
                                 <div className='details-title'>
                                     &nbsp;&nbsp;ทั่วไป</div>
 
-                                <div className="details-placeholder"></div>
+                                <div className="details-placeholder">
+                            
+                                    <EditTextarea name='textarea1' rows={40}
+                                    value='ข้อความที่จะให้แก้'
+                                    />
+                                </div>
 
                             </div>
                             <br />

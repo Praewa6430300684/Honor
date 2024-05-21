@@ -15,7 +15,7 @@ const Uplode = () => {
       padding: '10px',
       textAlign: 'center',
       cursor: 'pointer'
-      
+
     }
   };
   const onDrop = (acceptedFiles) => {
@@ -23,6 +23,16 @@ const Uplode = () => {
   };
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
+
+  
+  
+  const logout = () => {
+    console.log("Logout function called");
+
+    localStorage.removeItem('authToken');
+    
+  };
+
   return (
     <>
       <div className="row">
@@ -35,6 +45,11 @@ const Uplode = () => {
               <span>อัปโหลดไฟล์</span>
             </span>
 
+          </div>
+
+          <div className="logout">
+            <button onClick={logout}>
+              <Link to='/'>Logout</Link></button>
           </div>
         </div>
         <div className="col-md-6">
