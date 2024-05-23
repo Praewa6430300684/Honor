@@ -1,0 +1,49 @@
+.container-forgot {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-forgot {
+    font-family: "Prompt", sans-serif;
+    font-size: 3.2em;
+    line-height: 1.1;
+
+    color: #19A5CA;
+    
+    text-align: center;
+}
+
+.text-sub{
+    font-family: "Prompt", sans-serif;
+    font-size: 0.85em;
+    line-height: 1.1;
+
+    color: #8b8b8b;
+    
+    text-align: center;
+
+    margin-bottom: 15px;
+}
+
+.send button{
+    margin-top: 15px;
+    width: 200px;
+    font-size: 20px;
+}
+
+.text-reset{
+    font-family: "Prompt", sans-serif;
+    font-size: 2.8em;
+    line-height: 1.1;
+
+    color: #19A5CA;
+    
+    text-align: center;
+}
+
