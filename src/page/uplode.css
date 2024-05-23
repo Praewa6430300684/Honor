@@ -8,7 +8,7 @@ body {
   /* Remove default margin */
   padding: 0;
   /* Remove default padding */
-  font-family: Poppins, sans-serif;
+  font-family: Prompt, sans-serif;
   /* Ensure consistent font across the page */
 }
 
@@ -62,7 +62,7 @@ body {
 }
 
 .button1 {
-  font-family: Poppins, sans-serif;
+  font-family: Prompt, sans-serif;
   border-radius: 16px;
   background-color: #19a5ca;
   color: #fff;
@@ -100,7 +100,7 @@ body {
   color: #19a5ca;
   align-self: start;
   margin-left: 22px;
-  font: 500 32px Poppins, sans-serif;
+  font: 500 32px Prompt, sans-serif;
 }
 
 @media (max-width: 991px) {
@@ -113,7 +113,7 @@ body {
   color: #19a5ca;
   align-self: start;
   margin-left: 30px;
-  font-family:30px Poppins, sans-serif;
+  font-family:30px Prompt, sans-serif;
 }
 
 @media (max-width: 991px) {
