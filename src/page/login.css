@@ -55,7 +55,8 @@ h1 {
 }
 
 form {
-    margin-left: 115px;
+    margin: 0;
+    justify-content: center;
 
 }
 

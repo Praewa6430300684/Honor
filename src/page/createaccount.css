@@ -29,13 +29,13 @@ h2{
     color: #19A5CA;
 }
 
-form{
-    margin-left: 880px;
-    margin-top: -40px;
+.form-register form{
+    margin: 0;
     
 }
 
 .text2{
+    font-family: "Prompt", sans-serif;
     font-size: 1.25rem;
     font-weight:500;
     color: #19A5CA;
@@ -43,6 +43,7 @@ form{
 }
 
 .text5{
+    font-family: "Prompt", sans-serif;
     font-size: 0.85rem;
     font-weight:400;
     color: #000000;
@@ -61,6 +62,7 @@ input{
 }
 
 .text3{
+    font-family: "Prompt", sans-serif;
     font-size: 0.8rem;
     font-weight:450;
     color: #19A5CA;

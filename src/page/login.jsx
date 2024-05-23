@@ -1,5 +1,3 @@
-import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined';
-import { Button } from '@mui/material';
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -59,9 +57,10 @@ const Login = () => {
                         &nbsp;&nbsp;
 
                     </div>
-                    <span><input type="password" id='password' value={password} onChange={handlePasswordChange} placeholder="Password" required />
-                        <Button><VisibilityOffOutlinedIcon /></Button></span>
-
+                    <input type="password" id='password' value={password} onChange={handlePasswordChange} placeholder="Password" required />
+                        
+                    <br/>
+                    <Link to='/forgotpassword'>ลืมรหัสผ่าน?</Link>
                     <br />
                     <br />
                     <Link to='/uplode'>

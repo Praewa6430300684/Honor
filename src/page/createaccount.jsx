@@ -23,6 +23,7 @@ const Createaccount = () => {
 
     const handleConfirmPasswordChange = (e) => { // เพิ่ม handle function สำหรับการเปลี่ยนรหัสผ่านที่ยืนยัน
         setConfirmPassword(e.target.value);
+        
     };
 
     const handleSubmit = async (e) => {
@@ -52,34 +53,31 @@ const Createaccount = () => {
                 Create Account
             </h2>
             
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className='form-register'>
                 <div className='text2'>
                     Name
                 </div>
-                <input type="name" placeholder="Enter your name"></input>
+                <input type="name" placeholder="Enter your name" value={name} onChange={handleNameChange}></input>
                 <br />
                 <br />
+
                 <div className='text2'>
                     Email Address
                 </div>
-
-
                 <input type="email" id='email' value={email} onChange={handleEmailChange} placeholder="Enter email Address" required />
 
                 <br />
                 <br />
+
                 <div className='text2'>
                     Password
-                    
                 </div>
-
                 <input type="password" id='password' value={password} onChange={handlePasswordChange} placeholder="Enter your password" required />
                 <br />
                 <br />
+
                 <div className='text2'>
                     Confirm password
-                    
-                        
                 </div>
                 <input type='password' value={confirmPassword} onChange={handleConfirmPasswordChange} placeholder="Enter your confirm password"></input>
                 <br /><br />
